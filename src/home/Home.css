@@ -43,3 +43,36 @@
 .project-btn {
     margin: 20px 0 !important;
 }
+
+@media only screen and (max-width: 1249px) {
+    .project-container {
+        display: block;
+        text-align: center;
+    }
+    .projects-desc {
+        width: auto;
+        max-width: 800px;
+        margin: 10px auto;
+    }
+    .project-right {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .projects-img {
+        width: auto;
+    }
+    .project-right {
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .projects-img {
+        width: 90%;
+    }
+    .project-right {
+        padding: 0 10%;
+    }
+}
