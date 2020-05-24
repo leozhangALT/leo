@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './home/Home';
-import Temp from './sort/temp';
+import Sort from './sort/sort';
 import Unknown from './unknown';
 
 require('typeface-montserrat');
@@ -15,7 +15,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route path='/' exact component={Home}/>
-          <Route path='/sorting' exact component={Temp}/>
+          <Route path='/sort' exact component={Sort}/>
           <Route path='/' component={Unknown}/>
         </Switch>
       </BrowserRouter>

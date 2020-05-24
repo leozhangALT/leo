@@ -1,0 +1,121 @@
+.root {
+    min-height: 100vh;
+}
+
+.number-block {
+    background-color: cornflowerblue;
+}
+
+.sort-container {
+    display: flex;
+    align-items: flex-end;
+    width: 95%;
+    margin: auto;
+    min-height: 550px;
+}
+
+.header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.disable-button {
+    box-shadow: none !important;
+    background-color: #a6a6a6 !important;
+    color: white !important;
+}
+
+.header-button {
+    color: white !important;
+    margin: 0 8px !important;
+}
+
+.header-input {
+    margin: 0 10px;
+    width: 50px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header-text {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.control-panel {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 500px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-name {
+    margin: 0 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+.github-icon {
+    height: 25px;
+}
+
+.mobile-sort {
+    display: none !important;
+}
+
+.mobile-button {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1175px) {
+    .sort-alg {
+        display: none !important;
+    }
+    .mobile-sort {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sort-alg {
+        display: none !important;
+    }
+    .header-button {
+        font-size: 10px !important;
+        margin: 0 4px !important;
+    }
+    .header-text {
+        display: none;
+    }
+    .header-input {
+        font-size: 10px;
+        padding: 7px;
+    }
+    .mobile-sort {
+        display: block !important;
+    }
+}

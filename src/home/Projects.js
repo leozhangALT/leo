@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './Home.css';
 
 import sortGif from './gifs/sort.gif';
@@ -49,7 +49,9 @@ class Projects extends Component {
                         <p className='projects-title'>{proj.name}</p>
                         <p className='projects-desc'>{proj.desc1}</p>
                         <p className='projects-desc'>{proj.desc2}</p>
-                        <Button className='project-btn' style={{backgroundColor: this.props.theme}} variant="contained" color="primary">{proj.done ? 'Try Now' : 'Work in Progress'}</Button>
+                        <Button className='project-btn' style={{backgroundColor: this.props.theme}} variant="contained" color="primary">
+                            <Link style={{color: 'white', textDecoration: 'none'}} to='/sort' >{proj.done ? 'Try Now' : 'Work in Progress'}</Link>
+                        </Button>
                     </div>
                 </div>
             )
