@@ -30,7 +30,7 @@ const projects = [
         desc1: 'Business at your walk in barber shop is doing even better than before, but cusotmer wait times are skyrocketing. You don\'t want customers to get impatient and walk out the door, what do you do?',
         desc2: 'You use a beautiful online booking platform, allowing your customers to easily book their appointments. Customers are willing to pay more to avoid the wait. Resulting in more money in your pocket for doing the same amount of work.',
         image: bookingGif,
-        route: 'booking',
+        route: '/',
         done: false,
     },
 ]
