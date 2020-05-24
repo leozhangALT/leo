@@ -19,7 +19,7 @@ const projects = [
     },
     {
         name: 'Barber Shop Queue',
-        desc1: 'Business at your walk in barber shop is doing better than ever, you\'re having a hard time staying organized with all the customers piling in. You want to keep costs low and avoid hiring a secretary, what do you do?',
+        desc1: 'Business at your walk in barber shop is doing better than ever, you\'re having a hard time keeping track of all the new customers pilling in. You want to keep costs low and avoid hiring a secretary, what do you do?',
         desc2: 'You use a simple and intuitive app for customers to queue themselves as they walk in. No need to memorize who walked in first or use a messy system like take a number.',
         image: queueGif,
         route: 'queue',
@@ -27,7 +27,7 @@ const projects = [
     },
     {
         name: 'Customer Booking',
-        desc1: 'Business at your walk in barber shop is doing even better than before, but cusotmer wait times are skyrocketing. You don\'t want customers to get impatient and walk out the door, what do you do?',
+        desc1: 'Business at your walk in barber shop is doing even better than before, but with all the new customers, wait times are now skyrocketing. You don\'t want customers to get impatient and walk out the door, what do you do?',
         desc2: 'You use a beautiful online booking platform, allowing your customers to easily book their appointments. Customers are willing to pay more to avoid the wait. Resulting in more money in your pocket for doing the same amount of work.',
         image: bookingGif,
         route: '/',
