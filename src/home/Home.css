@@ -6,8 +6,9 @@
 
 .projects-header {
     text-align: center;
-    font-size: 30px;
-    padding-top: 50px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .project-container {
