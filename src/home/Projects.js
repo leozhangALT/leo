@@ -22,7 +22,20 @@ class Projects extends Component {
   render() {
     return (
       <div className='projects-root'>
-        Projects
+        <div className='projects-header'>My Personal Projects</div>
+        {projects.map((proj, index)=>{
+            return(
+                <div key={proj.name} style={{flexDirection: index%2 ? 'row-reverse' : null}} className='project-container'>
+                    <div>
+                        <img src={proj.image} className={'projects-img'} />
+                    </div>
+                    <div>
+                        <p className='projects-title'>{proj.name}</p>
+                        <p className='projects-desc'>{proj.desc}</p>
+                    </div>
+                </div>
+            )
+        })}
       </div>
     );
   }

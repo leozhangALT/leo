@@ -1,3 +1,26 @@
 .projects-root {
     background-color: #343335;
+    color: white;
+}
+
+.projects-header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.project-container {
+    display: flex;
+}
+
+.projects-title {
+    font-size: 25px;
+}
+
+.projects-desc {
+    text-align: justify;
+    width: 350px;
+}
+
+.projects-img {
+    width: 780px;
 }
