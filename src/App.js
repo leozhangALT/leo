@@ -2,9 +2,12 @@ import React, {Component} from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Home from './home/Home'
-import Temp from './sort/temp'
-import Unknown from './unknown'
+import Home from './home/Home';
+import Temp from './sort/temp';
+import Unknown from './unknown';
+
+require('typeface-montserrat');
+require('typeface-quicksand');
 
 class App extends Component {
   render() {

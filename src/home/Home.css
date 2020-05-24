@@ -1,6 +1,7 @@
 .projects-root {
     background-color: #343335;
     color: #e4d0b1;
+    padding: 150px 0;
 }
 
 .projects-header {
@@ -11,10 +12,11 @@
 
 .project-container {
     display: flex;
-    max-width: 1280px;
-    padding: 50px 0;
-    margin: 0 auto;
+    max-width: 1500px;
+    /* padding: 180px 0; */
+    margin: 150px auto 0 auto;
     align-items: center;
+    width: 90%;
 }
 
 .project-right {
@@ -22,16 +24,19 @@
 }
 
 .projects-title {
-    font-size: 25px;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .projects-desc {
+    font-family: quicksand;
     text-align: justify;
     width: 400px;
 }
 
 .projects-img {
-    width: 640px;
+    width: 800px;
 }
 
 .project-btn {

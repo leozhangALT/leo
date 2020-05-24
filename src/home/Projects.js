@@ -19,8 +19,8 @@ const projects = [
     },
     {
         name: 'Barber Shop Queue',
-        desc1: 'Business at your walk in barber shop is doing better than ever, your having a hard time staying organized with all customers piling in. You want to keep costs low and avoid hiring a secretary, what do you do?',
-        desc2: 'You use a simple and intuitive app for customers to queue themselves as they walk in. No need to memroize the order they walked in or using a messy system like take a number.',
+        desc1: 'Business at your walk in barber shop is doing better than ever, you\'re having a hard time staying organized with all the customers piling in. You want to keep costs low and avoid hiring a secretary, what do you do?',
+        desc2: 'You use a simple and intuitive app for customers to queue themselves as they walk in. No need to memorize the order they walked in or using a messy system like take a number.',
         image: queueGif,
         route: 'queue',
         done: true,
@@ -28,7 +28,7 @@ const projects = [
     {
         name: 'Customer Booking',
         desc1: 'Business at your walk in barber shop is doing even better than before, customers wait times are increasing drastically. You don\'t customers to get impatient and walk out the door, what do you do?',
-        desc2: 'You use a beautiful online booking platform. Allowing your customers to book their appointments online. As customers are willing to pay more to avoid the wait. Resulting in more money in your pocket for doing the same amount of work.',
+        desc2: 'You use a beautiful online booking platform. Allowing your customers to easily book their appointments online. As customers are willing to pay more to avoid the wait. Resulting in more money in your pocket for doing the same amount of work.',
         image: bookingGif,
         route: 'booking',
         done: false,
@@ -40,7 +40,7 @@ class Projects extends Component {
   render() {
     return (
       <div className='projects-root'>
-        <div style={{color: this.props.theme}} className='projects-header'>Personal Projects</div>
+        {/* <div style={{color: this.props.theme}} className='projects-header'>Personal Projects</div> */}
         {projects.map((proj, index)=>{
             return(
                 <div key={proj.name} style={{flexDirection: index%2 ? 'row-reverse' : null}} className='project-container'>
