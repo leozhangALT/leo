@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div>
         Home
-        <Link to="/sort">
+        <Link to="/sorting">
             go to sort
         </Link>
       </div>
