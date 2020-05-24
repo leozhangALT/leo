@@ -4,12 +4,16 @@ import './Home.css';
 
 import Projects from './Projects'
 
+const THEME = 'cornflowerblue'
+
 class Home extends Component {
 
   render() {
     return (
       <div>
-        <Projects/>
+        <Projects
+          theme = {THEME}
+        />
       </div>
     );
   }
