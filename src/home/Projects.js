@@ -14,7 +14,7 @@ const projects = [
         desc1: 'Want to see how popular sorting algorithms actually compare and modify the elements? The sorting visualizer highlights the values being compared and changed for your viewing pleasure.',
         desc2: 'Randomize an array of up to 1000 integers, pick the sorting algorithm and speed of your choice, sit back and watch the magic happen.',
         image: sortGif,
-        route: 'sorting',
+        route: 'sort',
         done: true,
     },
     {
@@ -50,7 +50,7 @@ class Projects extends Component {
                         <p className='projects-desc'>{proj.desc1}</p>
                         <p className='projects-desc'>{proj.desc2}</p>
                         <Button className='project-btn' style={{backgroundColor: this.props.theme}} variant="contained" color="primary">
-                            <Link style={{color: 'white', textDecoration: 'none'}} to='/sort' >{proj.done ? 'Try Now' : 'Work in Progress'}</Link>
+                            <Link style={{color: 'white', textDecoration: 'none'}} to={proj.route} >{proj.done ? 'Try Now' : 'Work in Progress'}</Link>
                         </Button>
                     </div>
                 </div>
