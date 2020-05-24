@@ -1,3 +1,15 @@
+.queue-root {
+  min-height: 100vh;
+}
+
+.queue-demo-pass {
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+}
+
 .header {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -5,7 +17,7 @@
 
 .sub-title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   padding-bottom: 10px;
 }
@@ -52,7 +64,7 @@
 
 .request {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
 }
 

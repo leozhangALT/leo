@@ -1,3 +1,7 @@
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// This was a bit of an old project I did back in 2018 when I was still a novice with React
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 import React, { Component } from 'react';
 import './App.css';
 import Swal from 'sweetalert2';
@@ -76,46 +80,46 @@ class App extends Component {
   }
 
 	handleConfirm = () => {
-    let customer_name = document.getElementById('input_name').value;
-    let barber_name = document.getElementById('input_barber').value;
+        let customer_name = document.getElementById('input_name').value;
+        let barber_name = document.getElementById('input_barber').value;
 
-    if (customer_name.length === 0){
-      Swal.fire({
-        title: "Your name must not be empty!",
-        timer: 5000
-      })
-      return;
+        if (customer_name.length === 0){
+            Swal.fire({
+                title: "Your name must not be empty!",
+                timer: 5000
+            })
+            return;
+        }
+
+        document.getElementById('input_barber').value = '';
+        document.getElementById('input_name').value = '';
+
+        list = this.state.list;
+
+        list.push({
+            id: id,
+            name: customer_name,
+            barber: barber_name,
+        });
+
+        id++;
+
+        localStorage.setItem('id', id);
+
+        localStorage.setItem('queue', JSON.stringify(list));
+
+        this.setState({list: list});
+
+        Swal.fire({
+            title: "Thank you, you have been added to the waitlist, please wait for us to call your name.",
+            timer: 5000,
+            showConfirmButton: false
+        })
     }
-
-    document.getElementById('input_barber').value = '';
-    document.getElementById('input_name').value = '';
-
-    list = this.state.list;
-
-    list.push({
-        id: id,
-        name: customer_name,
-        barber: barber_name,
-    });
-
-    id++;
-
-    localStorage.setItem('id', id);
-
-    localStorage.setItem('queue', JSON.stringify(list));
-
-    this.setState({list: list});
-
-    Swal.fire({
-      title: "Thank you, you have been added to the waitlist, please wait for us to call your name.",
-      timer: 5000,
-      showConfirmButton: false
-    })
-}
 
 	render() {
         return (
-            <div>
+            <div className='queue-root'>
 			    <div>
                     <link rel="stylesheet" type="text/css" href="css/main.css"></link>
                     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"></link>
@@ -174,6 +178,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
+                <div className={'queue-demo-pass'}>Password for Demo: lakers23</div>
             </div>
 		);
 	}
