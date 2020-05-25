@@ -7,6 +7,7 @@ import WOW from 'wowjs';
 import sortGif from './gifs/sort.gif';
 import queueGif from './gifs/queue.gif';
 import bookingGif from './gifs/booking.gif';
+import randomGif from './gifs/random.gif';
 
 import Button from '@material-ui/core/Button';
 
@@ -17,14 +18,6 @@ const projects = [
         desc2: 'Randomize an array of up to 1000 integers, pick the sorting algorithm and speed of your choice, sit back and watch the magic happen.',
         image: sortGif,
         route: 'sort',
-        done: true,
-    },
-    {
-        name: 'Random Movie/TV Show',
-        desc1: 'Business at your walk in barber shop is doing better than ever, you\'re having a hard time keeping track of all the new customers pilling in. You want to keep costs low and avoid hiring a secretary, what do you do?',
-        desc2: 'You use a simple and intuitive app for customers to queue themselves as they walk in. No need to memorize who walked in first or use a messy system like take a number.',
-        image: queueGif,
-        route: 'random',
         done: true,
     },
     {
@@ -42,6 +35,14 @@ const projects = [
         image: bookingGif,
         route: '/',
         done: false,
+    },
+    {
+        name: 'Random Movie/TV Show',
+        desc1: 'Covid-19 has kept you indoors, you just finished binge watching The Office for the 20th time. You decide that it\'s finally time to watch something new. But what?',
+        desc2: 'Use the Random Movie/TV Show tool to help you decide. The App makes an api call to moviedb.org and fetches a random movie or tv show, displaying its contents nicely for you to checkout.',
+        image: randomGif,
+        route: 'random',
+        done: true,
     },
 ]
 
