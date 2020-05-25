@@ -5,7 +5,9 @@ class Header extends Component {
     render() {
         return(
             <div className='header-root'>
-                Header
+                <div className='header-container'>
+                    <span className='header-contact'>Contact Me</span>
+                </div>
             </div>
         )
     }
