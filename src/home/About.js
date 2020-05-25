@@ -3,6 +3,9 @@ import './About.css';
 import { motion } from 'framer-motion';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
+const title = 'Hi, I\'m Leo, an aspiring Software Development Engineer';
+const subTitle = 'Currently Studying Computer Engineering at SFU'
+
 class About extends Component {
     state = {
         scrollHint: true,
@@ -26,7 +29,7 @@ class About extends Component {
         return(
             <div className='about-root'>
                 <div className='about-container'>
-                    <p className='about-title'>Hi, I'm Leo, an aspiring Software Development Engineer</p>
+                    <p className='about-title'>{title}</p>
                     <img alt='bitmoji' className='about-img' src={require('./images/bitmoji_smile.png')}/>
                     <div style={{height: '0'}}>
                         <motion.div
@@ -58,7 +61,7 @@ class About extends Component {
                             <img alt='blue' src={require('./images/blue.svg')}/>
                         </motion.div>
                     </div>
-                    <p className='about-subtitle'>Currently Studying Computer Engineering at SFU</p>
+                    <p className='about-subtitle'>{subTitle}</p>
                     <div style={{opacity: this.state.scrollHint ? '1' : '0'}} className='about-scroll-hint'><ArrowDownwardIcon/></div>
                 </div>
             </div>
