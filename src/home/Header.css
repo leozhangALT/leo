@@ -27,3 +27,10 @@
     background-color: cornflowerblue;
     transition: .5s;
 }
+
+
+@media only screen and (max-height: 800px) and (min-width: 500px) {
+    .header-root{
+        height: 60px;
+    }
+}
