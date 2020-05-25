@@ -46,6 +46,17 @@
     margin-top: 100px;
 }
 
+.about-scroll-hint {
+    color: white;
+    background-color: cornflowerblue;
+    padding: 10px 30px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 20px;
+    transition: opacity .5s ease-out;
+    opacity: 1;
+}
+
 @media only screen and (max-width: 1099px) {
     .about-title {
         width: 600px;
@@ -79,5 +90,11 @@
     .about-img {
         width: 100%;
         max-width: 350px;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .about-scroll-hint{
+        display: none;
     }
 }

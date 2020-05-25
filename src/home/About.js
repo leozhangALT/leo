@@ -1,8 +1,28 @@
 import React, {Component} from 'react';
 import './About.css';
 import { motion } from 'framer-motion';
+import Icon from '@material-ui/core/Icon';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 class About extends Component {
+    state = {
+        scrollHint: true,
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll)
+    }
+
+    handleScroll = () => {
+        if(this.state.scrollHint){
+            this.setState({scrollHint: false})
+        }
+    }
+
     render() {
         return(
             <div className='about-root'>
@@ -40,6 +60,7 @@ class About extends Component {
                         </motion.div>
                     </div>
                     <p className='about-subtitle'>Currently Studying Computer Engineering at SFU</p>
+                    <div style={{opacity: this.state.scrollHint ? '1' : '0'}} className='about-scroll-hint'><ArrowDownwardIcon/></div>
                 </div>
             </div>
         )
