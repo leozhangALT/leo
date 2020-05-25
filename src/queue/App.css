@@ -2,6 +2,10 @@
   min-height: 100vh;
 }
 
+.body {
+  
+}
+
 .queue-demo-pass {
   position: absolute;
   bottom: 40px;
@@ -24,7 +28,8 @@
 
 .logo {
   display: block;
-  margin: 10px auto;
+  padding: 10px;
+  margin: auto;
 }
 
 .grid-2 {
@@ -137,6 +142,21 @@
   text-align: center;
 }
 
-.clear-span {
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+  left: 50%;
+}
 
+.my-name {
+  margin: 0 10px;
+  font-size: 20px;
+  color: gray;
+}
+
+.github-icon {
+  height: 25px;
 }

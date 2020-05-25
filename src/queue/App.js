@@ -174,7 +174,11 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <div className={'queue-demo-pass'}>Password for Demo: lakers23</div>
+                <div className='footer'>
+                    <img alt='github' className='github-icon' src={require('../sort/images/GitHub-Mark-32px.png')}></img>
+                    <a className='my-name' href='https://github.com/TerryHintz'>{"Leo Zhang"}</a>
+                    <img alt='github' className='github-icon' src={require('../sort/images/GitHub-Mark-32px.png')}></img>
+                </div>
             </div>
 		);
 	}
