@@ -39,15 +39,15 @@ class RandomTv extends Component {
                         onClick={() => this.random()}
                         variant="contained"
                         color="primary"
-                        startIcon={<DiceIcon />}
+                        // startIcon={<DiceIcon />}
                     >
-                        Random
+                        <DiceIcon /><span className='random'>Random</span>
                     </Button>
                 </div>
                 <div className={'title-text'}>{this.state.title}</div>
-                <div>
-                    <img alt={'movie poster'} className={'movie-image'} src={this.state.image} />
-                </div>
+                
+                <img alt={'movie poster'} className={'movie-image'} src={this.state.image} />
+                
                 <div className={'movie-description'}>{this.state.description}</div>
             </div>
         )

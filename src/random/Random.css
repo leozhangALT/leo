@@ -35,3 +35,28 @@
 .movie-description {
     font-family: Quicksand;
 }
+
+.random {
+    margin-left: 5px ;
+}
+
+@media only screen and (max-width: 500px) {
+    .random-movie-root {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 25px auto;
+    }
+    .movie-image {
+        width: 100%;
+    }
+    .title-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+    .random {
+        display: none;
+    }
+}
