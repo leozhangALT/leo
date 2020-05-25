@@ -147,8 +147,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 10px;
-  left: 50%;
+  bottom: -100px;
 }
 
 .my-name {

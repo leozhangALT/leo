@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Swal from 'sweetalert2';
 
-const PASS = 'lakers23';
+const PASS = 'password';
 
 class App extends Component {
 	state = {
