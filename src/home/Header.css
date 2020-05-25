@@ -51,12 +51,18 @@
     color: cornflowerblue;
 }
 
-.header-snack-bar {
-    background-color: green !important;
-}
-
 @media only screen and (max-height: 800px) and (min-width: 500px) {
     .header-root{
         height: 60px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header-email {
+        padding: 0 10px;
+        font-size: 25px;
+    }
+    .header-dialog-container {
+        font-size: 18px;
     }
 }
