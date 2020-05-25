@@ -37,7 +37,7 @@ class Header extends Component {
                                 <FileCopyIcon onClick={() => this.copied()} style={{fontSize: '30px', cursor: 'pointer'}}/>
                             </CopyToClipboard>
                         </div>
-                        <p>Thank you, have a good day.</p>
+                        <p>Thank you.</p>
                     </div>
                 </Dialog>
                 <Snackbar
