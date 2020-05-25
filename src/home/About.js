@@ -36,7 +36,7 @@ class About extends Component {
                             animate={{rotate: 360}}
                             transition={{loop: Infinity, duration: 10, ease: 'linear'}}
                         >
-                            <img src='https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/index-portal-blue-50996d0762fb6d9ee13d6a52404dd01327fc542cc729777d532c9b633103c835.svg'/>
+                            <img src={require('./images/blue.svg')}/>
                         </motion.div>
                     </div>
                     <p className='about-subtitle'>Currently Studying Computer Engineering at SFU</p>
