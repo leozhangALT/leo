@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './About.css';
 import { motion } from 'framer-motion';
-import Icon from '@material-ui/core/Icon';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 class About extends Component {
@@ -28,7 +27,7 @@ class About extends Component {
             <div className='about-root'>
                 <div className='about-container'>
                     <p className='about-title'>Hi, I'm Leo, an aspiring Software Development Engineer</p>
-                    <img className='about-img' src={require('./images/bitmoji_smile.png')}/>
+                    <img alt='bitmoji' className='about-img' src={require('./images/bitmoji_smile.png')}/>
                     <div style={{height: '0'}}>
                         <motion.div
                             style={{top: '-386px'}}
@@ -36,7 +35,7 @@ class About extends Component {
                             animate={{rotate: 360}}
                             transition={{loop: Infinity, duration: 8, ease: 'linear'}}
                         >
-                            <img src={require('./images/green.png')}/>
+                            <img alt='green' src={require('./images/green.png')}/>
                         </motion.div>
                     </div>
                     <div style={{height: '0'}}>
@@ -46,7 +45,7 @@ class About extends Component {
                             animate={{rotate: 360}}
                             transition={{loop: Infinity, duration: 6, ease: 'linear'}}
                         >
-                            <img src={require('./images/purple.png')}/>
+                            <img alt='purple' src={require('./images/purple.png')}/>
                         </motion.div>
                     </div>
                     <div style={{height: '0'}}>
@@ -56,7 +55,7 @@ class About extends Component {
                             animate={{rotate: 360}}
                             transition={{loop: Infinity, duration: 10, ease: 'linear'}}
                         >
-                            <img src={require('./images/blue.svg')}/>
+                            <img alt='blue' src={require('./images/blue.svg')}/>
                         </motion.div>
                     </div>
                     <p className='about-subtitle'>Currently Studying Computer Engineering at SFU</p>

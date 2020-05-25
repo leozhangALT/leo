@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 import sortGif from './gifs/sort.gif';
@@ -44,7 +44,7 @@ class Projects extends Component {
         {projects.map((proj, index)=>{
             return(
                 <div key={proj.name} style={{flexDirection: index%2 ? 'row-reverse' : null}} className='project-container'>
-                    <img src={proj.image} className={'projects-img'} />
+                    <img alt={proj.name} src={proj.image} className={'projects-img'} />
                     <div className={'project-right'}>
                         <p className='projects-title'>{proj.name}</p>
                         <p className='projects-desc'>{proj.desc1}</p>

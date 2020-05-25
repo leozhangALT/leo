@@ -74,24 +74,24 @@ class Sort extends Component {
         this.setState({method});
         if(method === 'Merge Sort'){
             let copy = arr.slice(0);
-            const res = this.mergeSort(copy, 0, nums-1, []);
-            console.log(res);
+            this.mergeSort(copy, 0, nums-1, []);
+            // console.log(res);
         } else if(method === 'Quick Sort'){
             let copy = arr.slice(0);
-            const res = this.quickSort(copy, 0, nums-1, []);
-            console.log(res);
+            this.quickSort(copy, 0, nums-1, []);
+            // console.log(res);
         } else if(method === 'Bubble Sort'){
             let copy = arr.slice(0);
-            const res = this.bubbleSort(copy, []);
-            console.log(res);
+            this.bubbleSort(copy, []);
+            // console.log(res);
         } else if(method === 'Heap Sort'){
             let copy = arr.slice(0);
-            const res = this.heapSort(copy, []);
-            console.log(res);
+            this.heapSort(copy, []);
+            // console.log(res);
         } else if(method === 'Insertion Sort'){
             let copy = arr.slice(0);
-            const res = this.InsertionSort(copy, []);
-            console.log(res);
+            this.InsertionSort(copy, []);
+            // console.log(res);
         }
     }
 
@@ -394,9 +394,9 @@ class Sort extends Component {
                     working = {this.state.working}
                 />
                 <div className='footer'>
-                    <img className='github-icon' src={require('./images/GitHub-Mark-32px.png')}></img>
+                    <img alt='github' className='github-icon' src={require('./images/GitHub-Mark-32px.png')}></img>
                     <a className='my-name' href='https://github.com/TerryHintz'>{"Leo Zhang"}</a>
-                    <img className='github-icon' src={require('./images/GitHub-Mark-32px.png')}></img>
+                    <img alt='github' className='github-icon' src={require('./images/GitHub-Mark-32px.png')}></img>
                 </div>
             </div>
         )
