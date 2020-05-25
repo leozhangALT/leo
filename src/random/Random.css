@@ -1,0 +1,36 @@
+.random-root {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: cornflowerblue;
+}
+
+.random-movie-root {
+    width: 400px;
+    margin: 50px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.random-btn {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat;
+}
+
+.movie-image {
+    margin: 20px auto;
+    width: 400px;
+}
+
+.movie-description {
+    font-family: Quicksand;
+}

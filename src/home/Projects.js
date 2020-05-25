@@ -20,6 +20,14 @@ const projects = [
         done: true,
     },
     {
+        name: 'Random Movie/TV Show',
+        desc1: 'Business at your walk in barber shop is doing better than ever, you\'re having a hard time keeping track of all the new customers pilling in. You want to keep costs low and avoid hiring a secretary, what do you do?',
+        desc2: 'You use a simple and intuitive app for customers to queue themselves as they walk in. No need to memorize who walked in first or use a messy system like take a number.',
+        image: queueGif,
+        route: 'random',
+        done: true,
+    },
+    {
         name: 'Barber Shop Queue',
         desc1: 'Business at your walk in barber shop is doing better than ever, you\'re having a hard time keeping track of all the new customers pilling in. You want to keep costs low and avoid hiring a secretary, what do you do?',
         desc2: 'You use a simple and intuitive app for customers to queue themselves as they walk in. No need to memorize who walked in first or use a messy system like take a number.',
