@@ -63,6 +63,15 @@
     }
 }
 
+@media only screen and (max-height: 800px) and (min-width: 500px) {
+    .about-title {
+        margin-bottom: 75px;
+    }
+    .about-subtitle {
+        margin-top: 75px;
+    }
+}
+
 @media only screen and (max-width: 649px) {
     .about-title {
         font-size: 28px;
@@ -98,3 +107,4 @@
         display: none;
     }
 }
+
