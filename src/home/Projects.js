@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
+import WOW from 'wowjs';
+
 import sortGif from './gifs/sort.gif';
 import queueGif from './gifs/queue.gif';
 import bookingGif from './gifs/booking.gif';
@@ -37,13 +39,17 @@ const projects = [
 
 class Projects extends Component {
 
+    componentDidMount(){
+        new WOW.WOW().init();
+    }
+
   render() {
     return (
       <div className='projects-root'>
         <div style={{color: this.props.theme}} className='projects-header'>My Projects</div>
         {projects.map((proj, index)=>{
             return(
-                <div key={proj.name} style={{flexDirection: index%2 ? 'row-reverse' : null}} className='project-container'>
+                <div key={proj.name} style={{flexDirection: index%2 ? 'row-reverse' : null}} className={index%2 ? 'project-container wow slideInLeft' : 'project-container wow slideInRight'}>
                     <img alt={proj.name} src={proj.image} className={'projects-img'} />
                     <div className={'project-right'}>
                         <p className='projects-title'>{proj.name}</p>
