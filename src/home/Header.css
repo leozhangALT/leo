@@ -29,6 +29,27 @@
     transition: .5s;
 }
 
+.header-dialog-container {
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    font-family: quicksand;
+    font-weight: 600;
+}
+
+.header-dialog-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.header-email {
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight: 600;
+    color: cornflowerblue;
+}
 
 @media only screen and (max-height: 800px) and (min-width: 500px) {
     .header-root{
