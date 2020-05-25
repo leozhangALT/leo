@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 
 import Home from './home/Home';
 import Sort from './sort/sort';
@@ -13,14 +13,14 @@ require('typeface-quicksand');
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route path='/' exact component={Home}/>
           <Route path='/sort' exact component={Sort}/>
           <Route path='/queue' exact component={Queue}/>
           <Route path='/' component={Unknown}/>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
   
