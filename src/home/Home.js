@@ -11,7 +11,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{overflowX: 'hidden'}}>
         <Header
           theme = {THEME}
         />
