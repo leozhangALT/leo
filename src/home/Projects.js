@@ -40,7 +40,7 @@ class Projects extends Component {
   render() {
     return (
       <div className='projects-root'>
-        <div style={{color: this.props.theme}} className='projects-header'>Projects</div>
+        <div style={{color: this.props.theme}} className='projects-header'>My Projects</div>
         {projects.map((proj, index)=>{
             return(
                 <div key={proj.name} style={{flexDirection: index%2 ? 'row-reverse' : null}} className='project-container'>
