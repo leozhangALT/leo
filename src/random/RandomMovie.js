@@ -31,9 +31,6 @@ class RandomMovie extends Component {
     };
 
     render() {
-
-        const width = window.innerWidth;
-
         return(
             <div className={'random-movie-root'}>
                 <div className={'random-btn'}>
