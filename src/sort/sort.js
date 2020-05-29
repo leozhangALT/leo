@@ -393,7 +393,7 @@ class Sort extends Component {
                     handleSpeed = {this.handleSpeed}
                     working = {this.state.working}
                 />
-                <div className='footer'>
+                <div className='footer-sort'>
                     <img alt='github' className='github-icon' src={require('./images/GitHub-Mark-32px.png')}></img>
                     <a className='my-name' href='https://github.com/TerryHintz'>{"Leo Zhang"}</a>
                     <img alt='github' className='github-icon' src={require('./images/GitHub-Mark-32px.png')}></img>
