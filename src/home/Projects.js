@@ -5,6 +5,7 @@ import './Home.css';
 import WOW from 'wowjs';
 
 import sortGif from './gifs/sort.gif';
+import stackGif from './gifs/stack.gif';
 import queueGif from './gifs/queue.gif';
 import bookingGif from './gifs/booking.gif';
 import randomGif from './gifs/random.gif';
@@ -18,6 +19,14 @@ const projects = [
         desc2: 'Randomize an array of up to 1000 integers, pick the sorting algorithm and speed of your choice, sit back and watch the magic happen.',
         image: sortGif,
         route: 'sort',
+        done: true,
+    },
+    {
+        name: 'Stack Visualizer',
+        desc1: 'The concept of a Stack seems simple enough, but you never really fully understand something until you see it in action and use it yourself.',
+        desc2: 'The Stack Visualizer allows you to play around with the functions of a stack and see it change in real time. Helping you master the data structure within minutes.',
+        image: stackGif,
+        route: 'stack',
         done: true,
     },
     {

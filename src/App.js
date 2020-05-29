@@ -4,6 +4,7 @@ import { Route, Switch, HashRouter } from 'react-router-dom';
 
 import Home from './home/Home';
 import Sort from './sort/sort';
+import Stack from './stack/Stack';
 import Queue from './queue/App';
 import Random from './random/Random';
 import Unknown from './unknown';
@@ -18,6 +19,7 @@ class App extends Component {
         <Switch>
           <Route path='/' exact component={Home}/>
           <Route path='/sort' exact component={Sort}/>
+          <Route path='/stack' exact component={Stack}/>
           <Route path='/queue' exact component={Queue}/>
           <Route path='/random' exact component={Random}/>
           <Route path='/' component={Unknown}/>
