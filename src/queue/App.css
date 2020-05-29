@@ -1,5 +1,6 @@
 .queue-root {
   min-height: 100vh;
+  position: relative;
 }
 
 .queue-demo-pass {
@@ -142,6 +143,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
 }
 
 .my-name {
@@ -152,4 +156,10 @@
 
 .github-icon {
   height: 25px;
+}
+
+@media only screen and (max-height: 822px){
+  .footer-queue {
+    position: static;
+  }
 }
