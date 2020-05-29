@@ -142,8 +142,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: -100px;
 }
 
 .my-name {
