@@ -93,7 +93,7 @@
 }
 
 .path-drawer {
-    display: none;
+    display: none !important;
 }
 
 .path-mobile-button {
@@ -116,7 +116,7 @@
         display: none !important;
     }
     .path-drawer {
-        display: block;
+        display: block !important;
     }
 }
 
