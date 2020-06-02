@@ -104,14 +104,14 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 1050px) {
     .header-button {
         font-size: 9px !important;
         margin: 0 4px !important;
     }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 760px) {
     .path-algo{
         display: none !important;
     }
