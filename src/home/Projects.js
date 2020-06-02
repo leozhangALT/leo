@@ -4,6 +4,7 @@ import './Home.css';
 
 import WOW from 'wowjs';
 
+import pathGif from './gifs/path.gif';
 import sortGif from './gifs/sort.gif';
 import stackGif from './gifs/stack.gif';
 import queueGif from './gifs/queue.gif';
@@ -13,6 +14,14 @@ import randomGif from './gifs/random.gif';
 import Button from '@material-ui/core/Button';
 
 const projects = [
+    {
+        name: 'Path Finding Visualizer',
+        desc1: 'Want to see how popular path finding algorithms actually search through a 2D arrays and find their target? The path finding visualizer makes it easy for you to see its every move.',
+        desc2: 'Randomize a grid to fit your screen, pick the path finding algorithm and speed of your choice, and watch it makes its way through the grid.',
+        image: pathGif,
+        route: 'path',
+        done: true,
+    },
     {
         name: 'Sorting Visualizer',
         desc1: 'Want to see how popular sorting algorithms actually compare and modify the elements? The sorting visualizer highlights the values being compared and changed for your viewing pleasure.',

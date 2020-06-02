@@ -1,0 +1,108 @@
+.path-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.path-grid {
+    border-left: 1px solid cornflowerblue;
+    border-top: 1px solid cornflowerblue;
+}
+
+.path-square {
+    height: 30px;
+    width: 30px;
+    border: 1px solid cornflowerblue;
+    border-left: none;
+    border-top: none;
+}
+
+.path-row {
+    display: flex;
+}
+
+.path-icon {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.path-header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    color: white !important;
+    margin: 0 8px !important;
+}
+
+.header-input {
+    margin: 0 10px;
+    width: 50px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header-text {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.path-control-panel {
+    margin: 20px 0;
+}
+
+.path-speed-button {
+    color: white !important;
+    margin: 0 8px !important;
+}
+
+.my-name {
+    margin: 0 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+.github-icon {
+    height: 25px;
+}
+
+.footer-path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+@media only screen and (max-width: 750px) {
+    .header-button {
+        font-size: 9px !important;
+        margin: 0 4px !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .path-speed-button {
+        font-size: 10px !important;
+        margin: 0 4px !important;
+        padding: 6px 10px !important;
+    }
+}

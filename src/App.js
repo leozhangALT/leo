@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 
 import Home from './home/Home';
+import Path from './path/Path';
 import Sort from './sort/sort';
 import Stack from './stack/Stack';
 import Queue from './queue/App';
@@ -18,6 +19,7 @@ class App extends Component {
       <HashRouter>
         <Switch>
           <Route path='/' exact component={Home}/>
+          <Route path='/path' exact component={Path}/>
           <Route path='/sort' exact component={Sort}/>
           <Route path='/stack' exact component={Stack}/>
           <Route path='/queue' exact component={Queue}/>
