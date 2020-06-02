@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 const path_algorithms = [
     {full: 'Depth First Search', short: 'DFS'},
     {full: 'Breadth First Search', short: 'BFS'},
+    {full: 'Greedy Best First Search', short: 'GBFS'},
 ];
 
 class Header extends Component {
