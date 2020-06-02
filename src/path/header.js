@@ -38,7 +38,7 @@ class Header extends Component {
                                 </Button>
                             )
                         })}
-                        {window_width > 1000 &&
+                        {/* {window_width > 1000 &&
                             <Button
                                 className={'header-button'}
                                 color='primary'
@@ -46,7 +46,7 @@ class Header extends Component {
                             >
                                 {'More algorithms soon!'}
                             </Button>
-                        }
+                        } */}
                     </div>
                     <div className='header-section'>
                         <Button
