@@ -46,7 +46,7 @@ class Path extends Component {
                 if(this.state.method === 'Breadth First Search'){
                     res = bfs(copy, this.state.start, this.state.end);
                 }
-                if(this.state.method === 'Greedy Best First Search'){
+                if(this.state.method === 'Heuristic Depth First Search'){
                     res = greedy(copy, this.state.start, this.state.end);
                 }
                 if(res){
@@ -66,7 +66,7 @@ class Path extends Component {
             case 'Breadth First Search':
                 this.setState({method});
                 break;
-            case 'Greedy Best First Search':
+            case 'Heuristic Depth First Search':
                 this.setState({method});
                 break;
             default:

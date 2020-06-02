@@ -198,8 +198,8 @@ export function dfs(grid, start, end) {
 
 export function bfs(grid, start, end){
     let gridCopy = grid;
-    const endX = end.endX;
-    const endY = end.endY;
+    // const endX = end.endX;
+    // const endY = end.endY;
     const xMax = grid[0].length - 1;
     const yMax = grid.length - 1;
 
