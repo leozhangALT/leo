@@ -15,19 +15,19 @@ import Button from '@material-ui/core/Button';
 
 const projects = [
     {
-        name: 'Path Finding Visualizer',
-        desc1: 'Want to see how popular path finding algorithms actually search through a 2D arrays and find their target? The path finding visualizer makes it easy for you to see its every move.',
-        desc2: 'Randomize a grid to fit your screen, pick the path finding algorithm and speed of your choice, and watch it makes its way through the grid.',
-        image: pathGif,
-        route: 'path',
-        done: true,
-    },
-    {
         name: 'Sorting Visualizer',
         desc1: 'Want to see how popular sorting algorithms actually compare and modify the elements? The sorting visualizer highlights the values being compared and changed for your viewing pleasure.',
         desc2: 'Randomize an array of up to 1000 integers, pick the sorting algorithm and speed of your choice, sit back and watch the magic happen.',
         image: sortGif,
         route: 'sort',
+        done: true,
+    },
+    {
+        name: 'Path Finding Visualizer',
+        desc1: 'Want to see how popular path finding algorithms actually search through a 2D arrays and find their target? The path finding visualizer makes it easy for you to see its every move.',
+        desc2: 'Randomize a grid to fit your screen, pick the path finding algorithm and speed of your choice, and watch it makes its way through the grid.',
+        image: pathGif,
+        route: 'path',
         done: true,
     },
     {
