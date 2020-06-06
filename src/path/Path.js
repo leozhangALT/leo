@@ -99,18 +99,20 @@ class Path extends Component {
         let i = 0;
         for(i; i<searchLen; i++){
             const index = search[i].y * width + search[i].x;
+            const sq = squares[index].style;
             timeouts.push(window.setTimeout(() => {
-                squares[index].style.backgroundColor = 'red';
+                sq.backgroundColor = 'red';
             }, i * SPEED));
             timeouts.push(window.setTimeout(() => {
-                squares[index].style.backgroundColor = 'firebrick';
+                sq.backgroundColor = 'firebrick';
             }, i * SPEED + SPEED));
         }
         let j = 0;
         for(j; j<trailLen; j++){
             const index2 = trail[j].y * width + trail[j].x;
+            const sq = squares[index2].style;
             timeouts.push(window.setTimeout(() => {
-                squares[index2].style.backgroundColor = 'forestgreen';
+                sq.backgroundColor = 'forestgreen';
             }, j * SPEED + i * SPEED));
         }
         timeouts.push(window.setTimeout(() => {
