@@ -92,6 +92,10 @@ class Sort extends Component {
             let copy = arr.slice(0);
             this.InsertionSort(copy, []);
             // console.log(res);
+        } else if(method === 'Stalin Sort'){
+            let copy = arr.slice(0);
+            this.stalinSort(copy, []);
+            // console.log(res);
         }
     }
 
@@ -370,6 +374,22 @@ class Sort extends Component {
         return arr;
     }
     // Insertion Sort End
+
+    // Stalin Sort Start
+    stalinSort = (arr, animations) => {
+        const nums = arr.length;
+        let low = 0;
+        for(let i=0; i<nums; i++){
+            if(arr[i] < low){
+                animations.push({type: 'set', pos: i, val: 0});
+            } else {
+                low = arr[i];
+                animations.push({type: 'done', pos: i});
+            }
+        }
+        this.setState({animations});
+    }
+    // Stalin Sort End
 
     render() {
 
