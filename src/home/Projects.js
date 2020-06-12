@@ -10,6 +10,7 @@ import stackGif from './gifs/stack.gif';
 import queueGif from './gifs/queue.gif';
 import bookingGif from './gifs/booking.gif';
 import randomGif from './gifs/random.gif';
+import poopGif from './gifs/poop.gif';
 
 import Button from '@material-ui/core/Button';
 
@@ -64,6 +65,9 @@ const projects = [
     },
 ]
 
+const poop1 = 'Looking to kill a couple of minutes? Well we got you covered! Use arrowkeys to move around and dodge falling poops from the sky!';
+const poop2 = 'PoopDodge is made with GameMaker Studio. Download and run the executable to start playing instantly.';
+
 class Projects extends Component {
 
     componentDidMount(){
@@ -89,6 +93,19 @@ class Projects extends Component {
                 </div>
             )
         })}
+        {/* poopdodge */}
+        <div key={'PoopDodge'} style={{flexDirection: null}} className={'project-container wow slideInRight'}>
+                    <img alt={'poopGif'} src={poopGif} className={'projects-img'} />
+                    <div className={'project-right'}>
+                        <p className='projects-title'>{'PoopDodge'}</p>
+                        <p className='projects-desc'>{poop1}</p>
+                        <p className='projects-desc'>{poop2}</p>
+                        <Button onClick={()=>window.open('https://drive.google.com/drive/folders/1zAym2vSp30xKCTfnAXTuOLyUX-_2qqD8?usp=sharing')}
+                            className='project-btn' style={{backgroundColor: this.props.theme}} variant="contained" color="primary">
+                            Try Now
+                        </Button>
+                    </div>
+                </div>
       </div>
     );
   }
