@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import './Home.css';
 
-import Projects from './Projects';
-import About from './About';
 import Header from './Header';
+import About from './About';
+import Projects from './Projects';
+import Contact from './contact';
 
 const THEME = 'cornflowerblue'
 
@@ -19,6 +20,9 @@ class Home extends Component {
           theme = {THEME}
         />
         <Projects
+          theme = {THEME}
+        />
+        <Contact
           theme = {THEME}
         />
       </div>

@@ -1,0 +1,12 @@
+.contact-root {
+    padding: 150px 0;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-container {
+    text-align: center;
+}
