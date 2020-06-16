@@ -6,6 +6,7 @@ import linkedInImage from './images/linkedin_logo.png';
 import GitImage from './images/github_logo.svg';
 import LeetImage from './images/LeetCode_logo.png';
 import HackerImage from './images/HackerRank_logo.png';
+import YTImage from './images/yt_icon_rgb.png';
 
 const profiles = [
     {
@@ -19,15 +20,20 @@ const profiles = [
         link: 'https://github.com/TerryHintz',
     },
     {
-        name: 'LeetCode',
-        img: LeetImage,
-        link: 'https://leetcode.com/terryhintz/',
-    },
-    {
         name: 'HackerRank',
         img: HackerImage,
         link: 'https://www.hackerrank.com/cza82',
     },
+    {
+        name: 'LeetCode',
+        img: LeetImage,
+        link: 'https://leetcode.com/terryhintz/',
+    },
+    // {
+    //     name: 'Youtube',
+    //     img: YTImage,
+    //     link: 'https://www.youtube.com/user/lilzhang97',
+    // },
 ]
 
 class Contact extends Component {
@@ -46,7 +52,7 @@ class Contact extends Component {
                 <div className='contact-flex'>
                     {profiles.map((profile)=>{
                         return(
-                            <div className='contact-container'>
+                            <div onClick={() => window.open(profile.link)} key={profile.name} className='contact-container'>
                                 <img style={{width: '200px'}} src={profile.img}/>
                                 <p>{profile.name}</p>
                             </div>
