@@ -49,7 +49,7 @@ class Contact extends Component {
         return(
             <div className='contact-root'>
                 <div style={{color: this.props.theme}} className='projects-header'>My Profiles</div>
-                <div className='contact-flex'>
+                <div className='contact-flex wow slideInUp'>
                     {profiles.map((profile)=>{
                         return(
                             <div onClick={() => window.open(profile.link)} key={profile.name} className='contact-container'>
