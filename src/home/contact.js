@@ -29,11 +29,11 @@ const profiles = [
         img: LeetImage,
         link: 'https://leetcode.com/terryhintz/',
     },
-    // {
-    //     name: 'Youtube',
-    //     img: YTImage,
-    //     link: 'https://www.youtube.com/user/lilzhang97',
-    // },
+    {
+        name: 'Youtube',
+        img: YTImage,
+        link: 'https://www.youtube.com/user/lilzhang97',
+    },
 ]
 
 class Contact extends Component {
@@ -49,11 +49,11 @@ class Contact extends Component {
         return(
             <div className='contact-root'>
                 <div style={{color: this.props.theme}} className='projects-header'>My Profiles</div>
-                <div className='contact-flex wow slideInUp'>
+                <div className='contact-flex wow zoomIn'>
                     {profiles.map((profile)=>{
                         return(
                             <div onClick={() => window.open(profile.link)} key={profile.name} className='contact-container'>
-                                <img style={{width: '200px'}} src={profile.img}/>
+                                <img alt={profile.name} style={{width: '120px'}} src={profile.img}/>
                                 <p>{profile.name}</p>
                             </div>
                         )
