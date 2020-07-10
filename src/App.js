@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 
 import Home from './home/Home';
+import Recipe from './recipe/Recipes'
 import Path from './path/Path';
 import Sort from './sort/sort';
 import Stack from './stack/Stack';
@@ -19,6 +20,7 @@ class App extends Component {
       <HashRouter>
         <Switch>
           <Route path='/' exact component={Home}/>
+          <Route path='/recipes' exact component={Recipe}/>
           <Route path='/path' exact component={Path}/>
           <Route path='/sort' exact component={Sort}/>
           <Route path='/stack' exact component={Stack}/>

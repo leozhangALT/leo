@@ -1,0 +1,138 @@
+p {
+  font-family: quicksand;
+}
+
+li {
+  font-family: quicksand;
+}
+
+.recipe-container {
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.recipe-paper {
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.recipe-sub-section {
+  padding-top: 10px;
+}
+
+.recipe-img {
+  width: 100%;
+}
+
+.recipe-header {
+  margin-bottom: 20px;
+  font-family: montserrat;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.recipe-sub-header {
+  margin-bottom: 20px;
+  font-family: montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.recipe-root {
+  /* display: flex; */
+  min-height: 100vh;
+}
+
+.recipe-drawer {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #343335;
+  text-align: center;
+}
+
+.recipe-icon-btn {
+  background-color: floralwhite !important;
+  border-radius: 3px !important;
+}
+
+.recipe-drawer-header {
+  margin: 20px auto;
+  font-family: montserrat;
+  font-size: 25px;
+  font-weight: 600;
+  color: cornflowerblue;
+}
+
+.recipe-drawer-item {
+  padding: 10px 0;
+  cursor: pointer;
+  color: #e4d0b1;
+  font-family: quicksand;
+  transition: .5s;
+  font-weight: 500;
+  padding-left: 25px;
+}
+
+.recipe-drawer-item:hover{
+  background-color: rgb(35, 125, 177);
+}
+
+.recipe-dialog {
+  width: 400px;
+  padding: 20px;
+}
+
+.recipe-field {
+  width: 100%;
+  margin: 10px 0 !important;
+}
+
+.recipe-field-add-ingredients {
+  width: 100%;
+  margin: 10px 0 !important;
+}
+
+.recipe-field-add-steps {
+  width: 100%;
+  margin: 10px 0 !important;
+}
+
+.recipe-dialog-header {
+  font-family: quicksand;
+  font-size: 20px;
+  /* margin: 10px 0; */
+  font-weight: 500;
+}
+
+.recipe-dialog-next {
+  background-color: cornflowerblue !important;
+  color: white !important;
+  margin-top: 20px !important;
+  font-family: quicksand !important;
+  float: right;
+}
+
+.recipe-dialog-add {
+  margin: auto !important;
+}
+
+.recipe-field-container {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-delete {
+  background-color: cornflowerblue !important;
+  margin-left: 10px !important;
+}
+
+@media only screen and (max-width: 800px){
+  .recipe-drawer {
+    display: none;
+  }
+  .recipe-container {
+    margin-left: 0;
+  }
+}
