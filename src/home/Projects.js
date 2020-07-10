@@ -4,6 +4,7 @@ import './Home.css';
 
 import WOW from 'wowjs';
 
+import recipeGif from './gifs/recipe.gif';
 import pathGif from './gifs/path.gif';
 import sortGif from './gifs/sort.gif';
 import stackGif from './gifs/stack.gif';
@@ -19,7 +20,7 @@ const projects = [
         name: 'Recipe Manager',
         desc1: 'You come up with an amazing personal recipe, however saving them on the notes on your phone just looks awful and is hard to read',
         desc2: 'The Recipe Manager allows you to save all your favourite recipes and displays it nicely, making it easy for you to use time and time again.',
-        image: sortGif,
+        image: recipeGif,
         route: 'recipes',
         done: true,
     },
