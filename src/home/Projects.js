@@ -17,14 +17,6 @@ import Button from '@material-ui/core/Button';
 
 const projects = [
     {
-        name: 'Recipe Manager',
-        desc1: 'You come up with an amazing personal recipe, however saving them on the notes on your phone just looks awful and is hard to read',
-        desc2: 'The Recipe Manager allows you to save all your favourite recipes and displays it nicely, making it easy for you to use time and time again.',
-        image: recipeGif,
-        route: 'recipes',
-        done: true,
-    },
-    {
         name: 'Sorting Visualizer',
         desc1: 'Want to see how popular sorting algorithms actually compare and modify the elements? The sorting visualizer highlights the values being compared and changed for your viewing pleasure.',
         desc2: 'Randomize an array of up to 1000 integers, pick the sorting algorithm and speed of your choice, sit back and watch the magic happen.',
@@ -63,6 +55,14 @@ const projects = [
         image: bookingGif,
         route: '/',
         done: false,
+    },
+    {
+        name: 'Recipe Manager',
+        desc1: 'You come up with an amazing personal recipe, however saving them on the notes on your phone just looks awful and is hard to read',
+        desc2: 'The Recipe Manager allows you to save all your favourite recipes and displays it nicely, making it easy for you to use time and time again.',
+        image: recipeGif,
+        route: 'recipes',
+        done: true,
     },
     {
         name: 'Random Movie/TV Show',
